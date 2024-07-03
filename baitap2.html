@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+             Viết chương trình khai báo mảng có sẵn gồm nhiều phần tử,
+             yêu cầu người dùng nhập vào giá trị bất kỳ và tìm kiếm trong mảng.
+             In ra vị trí của phần tử trong mảng nếu tìm thấy,
+             nếu không thì in “phần tử không tồn tại” lên màn hình console.
+        */
+        let students = ["hoa", "nhung", "lan", "an", "vân"];
+        let valueFind = prompt("mời nhập giá trị cần tìm kiếm!");
+        let result = students.indexOf(valueFind);
+        if (result == -1) {
+            console.log(`${valueFind} không tồn tại trong mảng students`);
+        } else {
+            console.log(`${valueFind} ở vị trí ${result} trong mảng students`);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        1. map ( duyệt mảng)
+        2. forEach ( duyệt mảng)
+        3. filter ( lọc mảng theo  điều kiện)
+        4. reducer ( tính toán)
+        5. revercer ( đảo các phần tử trong mảng)
+        7. fill     ( fill 1 giá trị)
+        8. flat ( dùng để trải phẳng mảng)
+        9. concat ( gộp, nối mảng)
+        10. slice ( cắt, sao chép tạp ra mảng mới)
+        11. find  ( tìm kiếm trả về phần tử- có trả về phần tử, không có trả 
+        undefined)
+        12. findIndex (tìm kiếm trả về vị trí)
+        13. includes  ( kiểm tra phần tử có trong mảng trả về true/false)
+        14. indexOf   ( kiểm tra phần tử có trả về vị trí không có trả về -1)
+        15. soft ( sắp xếp)
+        .......
+
+    -->
+    <script>
+        let students = ["hoa", "ngọc", "vân", "tuấn anh"];
+        let findName = "vân"
+        // tìm trong mảng students có sinh viên tên vân không
+        let result = students.find((item) => {
+            return item == findName;
+        })
+        if (result) {
+            console.log(`trong mảng students có ${findName}`);
+        } else {
+            console.log(`trong mảng students không có ${findName}`);
+
+        }
+        /*   phân biệt slice và splice
+            - slice: sao chép, cắt ra 1 mảng mới tức là không liên quan đến mảng ban đầu
+            - splice: tương tác trực tiếp với mảng ban đầu.
+        
+        */
+
+        let numbers = [3, 1, 5, 9];
+        let arr1 = numbers.slice(0, 2);
+        console.log(arr1);
+        console.log(numbers);
+
+
+
+
+    </script>
+</body>
+
+</html>

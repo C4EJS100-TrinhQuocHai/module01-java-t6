@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+          JS:
+          1. nhóm kiểu dữ liệu đơn giản- kiểu tham trị- primitive - type
+            - number
+            - string
+            - boolean
+            - null
+            - undefined
+            - NaN
+
+          2. nhóm kiểu dữ liệu phức tạp- kiểu tham chiếu - reference type.
+           - array
+             + cách khai báo: có 2 cách khai báo
+               + C1: new Array(): ít dùng
+               + C2: const,let, var tên_mảng = [];
+               khai báo 1 mảng chứa các số
+               let numbers = [1,3,5,7];
+               khai báo 1 mảng chứa danh sách sinh viên
+               let students = ["hoa","vân","minh","hùng"];
+                
+             + CRUD với 1 cái mảng
+               + C: Create : thêm mới phần tử vào trong mảng.
+                            dùng phương thức
+                            + push (thêm phần tử vào vị trí cuối cùng trong mảng)
+                            + unshift ( thêm phần tử vào đầu mảng)
+                            + splice ( thêm vào vị trí bất kì)
+                            splice(vị trí, số phần tử muốn xóa, phần tử muốn thêm vào)
+               + R: Read   : Duyệt in ra các phần tử trong mảng.
+                            + for : nắm chắc for
+                            + for-in : trả về vị trí
+                            + for-of : trả về phần tử
+               + U: Update : Cập nhật
+                            + splice(vị trí, số phần tử muốn xóa, phần tử muốn thêm vào)
+                            + cập nhật theo index( vị trí!)
+               + D: Delete : Xóa phần tử trong mảng
+                            + splice()
+                            + pop(): xóa phần tử cuối cùng
+                            + shift: xóa phần tử đầu tiên
+           - object
+           - function
+           
+        */
+        // let students = ["hồng vân", "minh thu", "hồng lan"];
+        //    students.push("hồng vân");
+        // [hồng vân]
+        //    students.push("minh thu")
+        // [hồng vân, minh thu];
+        //    students.unshift("hồng lan");
+        // [hồng lan, hồng vân, minh thu];
+        // let students = ["hồng vân", "minh thu", "hồng lan"];
+        // students.splice(1,0,"anh túc");
+        // ["hồng vân","anh túc", "minh thu","hồng lan"]
+
+        // for (let i = 0; i < students.length; i++) {
+        //     console.log("i", i); // 0 1 2
+        //     console.log(students[i]);
+        // }
+        // for (const key in students) {
+        //     // console.log("key",key); // 0 1 2
+        //     if(key==1){
+
+        //     }
+        //     console.log(students[key]);
+        //     break;
+        // }
+        // for (const item of students) {
+        //     console.log("item:", item);
+        // }
+        let students = ["hồng vân", "minh thu","tiến đạt","hồng lan"];
+        // students.splice(0,1,"minh hằng");
+        // cập nhật minh thu thành ngọc lan
+        // students.splice(1,1,"ngọc lan")
+        // students.splice(0,3,"lan","minh");
+        // students.splice(1,2,"lan","minh");
+        // students[1]="đạt";
+        // students.pop();
+        // students.shift();
+        
+        students.splice(2,1);
+        console.log(1111111, students);
+
+
+
+    </script>
+</body>
+
+</html>

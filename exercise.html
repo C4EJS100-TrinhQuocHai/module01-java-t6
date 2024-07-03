@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /* 
+             đề  bài :
+                Viết chương trình khai báo 1 mảng gồm các phần tử bất kỳ, 
+                Tiến hành in ra các phần tử là số nguyên trong mảng,
+                nếu không có số nguyên nào thì hiển thị 
+                “Trong mảng không tồn tại số nguyên” lên màn hình console.
+                INPUT:
+                ["hoa",5,5.1,"hung",-5];
+                OUTPUT:
+                5,-5
+         */
+        // các bước làm
+        /* 
+           B1: Khai báo mảng
+           B2: Duyệt các phần tử trong mảng
+           B3: kiểm tra xem có phải là số nguyên hay không
+           B4: Kết luận
+         */
+        let array = ["hoa", 5, 5.1, "hung", -5, 6];
+        // tạo biến đếm
+        let flag = 1000;
+        for (let i = 0; i < array.length; i++) {
+            //  if(array[i])
+            //  phương thức  Number.isInterger kiểm tra có phải là số nguyên hay không?
+            if (Number.isInteger(array[i])&&array[i]>0) {
+                console.log(`${array[i]} là số nguyên dương`);
+                flag=2000
+            }else if(Number.isInteger(array[i]) && array[i]< 0){
+                console.log(`${array[i]} là số nguyên âm`);
+            }
+        }
+        if (flag == 1000) {
+            console.log("Trong mảng không tồn tại số nguyên");
+        }
+
+    </script>
+</body>
+
+</html>

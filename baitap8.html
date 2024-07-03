@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+          Viết chương trình khai báo mảng số nguyên bất kỳ,
+          in ra tất cả các phần tử xuất hiện từ hai lần trở lên 
+          trong mảng đã khai báo.
+          INPUT :[ 1,1,2,1,2,3,4,6]
+          OUTPUT:[1,2];
+        */
+       let array= [1, 1, 2, 1, 2, 3, 4, 6];
+       //[1,2,3,4,6]
+       // new Set 
+       let newArray= [1,2,3,4,6];
+       
+       for (let i = 0; i < newArray.length; i++) {
+          let count=0;
+            for (let j = 0; j < array.length; j++) {
+               
+                if(newArray[i]==array[j]){
+                    count++
+                }
+            }
+            if(count>1){
+                console.log(`phần tử ${newArray[i]} xuất hiện trên 2 lần`);
+            }
+        
+       }
+    //    let result= new Set(array);
+
+
+    //    console.log(result);
+    //    for (let i = 0; i < 8; i++) {
+    //         let count=0;
+    //         for (let j = 0; j < 8; j++) {
+    //             if(array[j]==array[i]){
+    //                 count++
+    //             }
+    //         }
+    //         if(count>1){
+    //             console.log("phần tử xuất hiện trên 2 lần",array[i]);
+    //         }
+    //    }
+       /* 
+        lọc ra các phần tử không trùng nhau trong mảng array
+        sau đó mới dùng for lông.
+       */
+    </script>
+</body>
+
+</html>
